@@ -8,6 +8,7 @@ gem 'rails', '3.2.1'
 group :development do
   gem 'mysql2'
   gem 'ruby-debug19'
+  gem "rspec-rails", "~> 2.8"
 end
 
 # Gems used only for assets and not required
@@ -17,7 +18,8 @@ group :assets do
   gem 'coffee-rails', '3.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer'
+  #gem 'execjs'
+  #gem 'nodejs'
 
   gem 'uglifier', '1.2.3'
 end
@@ -26,6 +28,7 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem "rspec-rails", "~> 2.8"
 end
 
 group :production do
