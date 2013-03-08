@@ -1,14 +1,19 @@
+<%# debugger %>
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= full_title(yield :title) %></title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title><%= full_title(yield :title) %></title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= render :partial => "shared/shim" %>
+  </head>
+  <body
+    <%= render :partial => "shared/header" %>
+    <div class="container">
+      <%= yield %>
+      <%=render :partial => "shared/footer" %>
+    </div>
 
-<%= yield %>
-
-</body>
+  </body>
 </html>

@@ -1,13 +1,18 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-
+gem 'bootstrap-sass', '2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
   gem 'mysql2'
-  gem 'ruby-debug19'
+  #gem 'ruby-debug19'
+  gem "debugger-pry", :require => "debugger/pry"
+  gem 'pry'
+  gem 'debugger'
+  gem 'gem-man'
+  gem 'debugger-completion'
   gem "rspec-rails", "~> 2.8"
   gem "guard-rspec", "1.2.1"
   gem 'guard-spork', '1.2.0'
