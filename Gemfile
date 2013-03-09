@@ -17,6 +17,7 @@ group :development do
   gem "guard-rspec", "1.2.1"
   gem 'guard-spork', '1.2.0'
   gem 'spork', '0.9.2'
+  gem 'annotate', '2.5.0'
 end
 
 # Gems used only for assets and not required
@@ -47,7 +48,7 @@ group :production do
   gem 'pg', '0.12.2'
 end
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '3.0.1'
 
 # To use Jbuilder templates for JSON
 gem 'jbuilder'
