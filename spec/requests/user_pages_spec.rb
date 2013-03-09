@@ -47,6 +47,8 @@ describe "UserPages" do
         it { should have_selector('title', text: user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') } 
       end
+
+      it { should have_link('Sign out') }
     end
     
     it "should have h1 'Sign up'" do 
