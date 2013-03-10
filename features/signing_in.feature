@@ -10,7 +10,7 @@ Feature: Signing in
             And the user has an account
         When the user submits valid signin information
         Then he should see his profile page
-        And he should see a signout linFeature: Signing in
+        And he should see a signout link
         
     Scenario: Unsuccessful signin
             Given a user visits the signin page
@@ -22,4 +22,4 @@ Feature: Signing in
             And the user has an account
         When the user submits valid signin information
         Then he should see his profile page
-            And he should see a signout link
+           And he should see a signout link

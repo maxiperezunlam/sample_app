@@ -45,6 +45,7 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
+  gem 'simplecov', :require => false
 end
 
 group :production do
@@ -55,7 +56,9 @@ gem 'bcrypt-ruby', '3.0.1'
 
 # To use Jbuilder templates for JSON
 gem 'jbuilder'
-
+gem 'faker', '1.0.1'
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
 # Use unicorn as the web server
 # gem 'unicorn'
 
