@@ -1,0 +1,4 @@
+MetricFu::Configuration.run do |config|
+    config.metrics -= [:RCov]
+    config.syntax_highlighting = false
+end

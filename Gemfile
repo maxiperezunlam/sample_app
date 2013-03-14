@@ -18,6 +18,10 @@ group :development do
   gem 'guard-spork', '1.2.0'
   gem 'spork', '0.9.2'
   gem 'annotate', '2.5.0'
+  gem 'metrical'
+  gem 'fattr'
+  gem 'arrayfields'
+  gem 'map'
 end
 
 # Gems used only for assets and not required
@@ -46,6 +50,7 @@ group :test do
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
   gem 'simplecov', :require => false
+  gem 'metrical'
 end
 
 group :production do
